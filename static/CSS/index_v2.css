@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/righteous/v17/1cXxaUPXBpj2rGoU7C9WiHGFq8Kk1Q.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+    max-width: 500px;
+    margin: auto;
+}
+
+.homepage {
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 5px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.homepage_frame {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+}
+
+.title {
+    text-align: center;
+    color: black;
+    font-size: 128px;
+    font-family: Righteous;
+    word-wrap: break-word;
+}
+
+.buttons_frame {
+    display: inline-flex;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.play_frame {
+    display: flex;
+    width: 289px;
+    height: 100px;
+    padding: 10px 15px;
+    align-items: center;
+    gap: 25px;
+    border-radius: 5px;
+    border: 3px solid #000;
+    overflow: hidden; 
+    justify-content: flex-start;
+}
+
+.cartones_frame {
+    display: flex;
+    width: 289px;
+    height: 100px;
+    padding: 10px 15px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+    border-radius: 5px;
+    border: 3px solid #000;
+    overflow: hidden;
+}
+
+.buttons_text_frame {
+    color: #000;
+    text-align: center;
+    font-family: Righteous;
+    font-size: 36px;
+    line-height: normal;
+    word-wrap: break-word;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}

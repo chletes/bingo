@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BingoLetes - Play !</title>
+    <link rel="stylesheet" type="text/css" href="static/CSS/bingopage.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="bingopage">
+        <div class="bingopage_frame">
+            <div class="title">BingoLetes</div>
+            <!-- <div class="slidecontainer" style="width: 100%;" id="bingo_speed_container">
+                <p style="display: inline;">
+                    <span>Velocidad del bingo: </span>
+                    <span id="bingo_speed_value">3</span>
+                    <span> segundos</span>
+                </p>
+                <input type="range" min="2" max="10" value="3" id="bingo_speed_range">
+                <script>
+                    var slider = document.getElementById("bingo_speed_range");
+                    var output = document.getElementById("bingo_speed_value");
+                    output.innerHTML = slider.value; // Display the default slider value
+            
+                    // Update the current slider value (each time you drag the slider handle)
+                    slider.oninput = function () {
+                        output.innerHTML = this.value;
+                    }
+                </script>
+            </div> -->
+            <div class="bingoframe">
+                <div class="Frame1">
+                    <div class="bingo_board">
+                        <div class="bingo_board">
+                            <div class="bingo_table" id="bingo_table">
+                                <div class="tr_bingo_table">
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_1">1</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_2">2</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_3">3</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_4">4</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_5">5</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_6">6</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_7">7</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_8">8</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_9">9</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_10">10</div>
+                                    </div>                                    
+                                </div>
+                                <div class="tr_bingo_table">
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_11">11</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_12">12</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_13">13</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_14">14</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_15">15</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_16">16</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_17">17</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_18">18</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_19">19</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_20">20</div>
+                                    </div>                                    
+                                </div>
+                                <div class="tr_bingo_table">
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_21">21</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_22">22</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_23">23</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_24">24</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_25">25</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_26">26</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_27">27</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_28">28</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_29">29</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_30">30</div>
+                                    </div>
+                                </div>
+                                <div class="tr_bingo_table">
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_31">31</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_32">32</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_33">33</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_34">34</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_35">35</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_36">36</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_37">37</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_38">38</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_39">39</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_40">40</div>
+                                    </div>
+                                </div>
+                                <div class="tr_bingo_table">
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_41">41</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_42">42</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_43">43</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_44">44</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_45">45</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_46">46</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_47">47</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_48">48</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_49">49</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_50">50</div>
+                                    </div>
+                                </div>
+                                <div class="tr_bingo_table">
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_51">51</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_52">52</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_53">53</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_54">54</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_55">55</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_56">56</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_57">57</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_58">58</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_59">59</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_60">60</div>
+                                    </div>
+                                </div>
+                                <div class="tr_bingo_table">
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_61">61</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_62">62</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_63">63</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_64">64</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_65">65</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_66">66</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_67">67</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_68">68</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_69">69</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_70">70</div>
+                                    </div>
+                                </div>
+                                <div class="tr_bingo_table">
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_71">71</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_72">72</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_73">73</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_74">74</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_75">75</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_76">76</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_77">77</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_78">78</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_79">79</div>
+                                    </div>
+                                    <div class="td_bingo_table">
+                                        <div class="div_not_said_number_bingo_table" id="number_80">80</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="last_five_numbers_table" id="last_five_numbers_table">
+                        <tbody>
+                            <tr class="tr_last_five_numbers_table">
+                                <td class="td_last_five_numbers_table" style="border-left: 0px;">
+                                    <div class="div_last_five_numbers_table" id="last_numbers_5"></div>
+                                </td>
+                                <td class="td_last_five_numbers_table">
+                                    <div class="div_last_five_numbers_table" id="last_numbers_4"></div>
+                                </td>
+                                <td class="td_last_five_numbers_table">
+                                    <div class="div_last_five_numbers_table" id="last_numbers_3"></div>
+                                </td>
+                                <td class="td_last_five_numbers_table">
+                                    <div class="div_last_five_numbers_table" id="last_numbers_2"></div>
+                                </td>
+                                <td class="td_last_five_numbers_table">
+                                    <div class="div_last_five_numbers_table" id="last_numbers_1"
+                                        style="font-size: 50px;"></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="buttons_frame">
+        <button class="material-symbols-outlined" id="bingo_status" style="font-size: 60px;">play_circle</button>
+        <button onclick="location.href='index_v3.html'" class="material-symbols-outlined"
+            style="font-size: 60px;">arrow_circle_left</button>
+    </div>
+    <script>
+
+        // Bingo board variables
+        var NB_NUMEROS = 80;
+        var bingo_board = null;
+
+
+        // Timer variables
+        var timer = null;
+        var timerRunning = false;
+        var bingo_status = document.getElementById("bingo_status");;
+        var bingo_speed = 3 * 1000;
+        var timerRuns = NB_NUMEROS;
+
+
+        // Bingo board functions
+        function new_game(NB_NUMEROS) {
+            // Genera una lista de números de 1 a NB_NUMEROS
+            let bingo_play = Array.from({ length: NB_NUMEROS }, (_, i) => i + 1);
+
+            // Baraja la lista de números
+            for (let i = bingo_play.length - 1; i > 0; i--) {
+                let j = Math.floor(Math.random() * (i + 1));
+                [bingo_play[i], bingo_play[j]] = [bingo_play[j], bingo_play[i]];
+            }
+
+            let board = { "NB_NUMEROS": NB_NUMEROS, "bingo_play": bingo_play, "current_index": 0, "said_numbers": [] };
+            //console.log(board["bingo_play"]);
+            return board;
+        }
+
+        function pop_number(board) {
+            board["said_numbers"].push(board["bingo_play"].pop());
+            board["current_index"]++;
+            console.log(board["said_numbers"]);
+        }
+
+        // Timer functions
+        function stopTimer() {
+            clearInterval(timer);
+            console.log("Timer paused.");
+        }
+
+        function TimerIntervalFunction() {
+            pop_number(bingo_board);
+            update_last_numbers_table(bingo_board["said_numbers"]);
+            update_bingo_table(bingo_board["said_numbers"]);
+            timerRuns -= 1;
+            if (timerRuns <= 0) {
+                stopTimer();
+                alert("Bingo terminado!")
+                window.location.href = "index_v3.html";
+            }
+        }
+
+        function startTimer() {
+            timer = setInterval(TimerIntervalFunction, bingo_speed);
+            console.log("Timer set.");
+        }
+
+
+        // UI functions
+        function play_pause(event) {
+            /* var audio = new Audio('../audio/79.mp3');
+            audio.play(); */
+            if (timerRunning == true) {
+                console.log("pausing game...");
+                stopTimer();
+                timerRunning = !timerRunning;
+                bingo_status.innerHTML = "play_circle";
+            } else {
+                console.log("(re)starting game...");
+                startTimer();
+                timerRunning = !timerRunning;
+                bingo_status.innerHTML = "pause_circle";
+            }
+        }
+
+        function update_last_numbers_table(said_numbers) {
+            let last_index = said_numbers.length;
+            //document.getElementById("last_numbers_1").innerHTML = bingo_board["said_numbers"][last_index - 1];
+            for (let i = 1; i < 6; i++) {
+                //console.log(bingo_board["said_numbers"][last_index - i])
+                if (said_numbers[last_index - i] != undefined) {
+                    let last_numbers_id = "last_numbers_" + i;
+                    //console.log(last_numbers_id);
+                    document.getElementById(last_numbers_id).innerHTML = said_numbers[last_index - i];
+                }
+            }
+        }
+
+        function update_bingo_table(said_numbers){
+            for (let i = 0; i < said_numbers.length + 1; i++){
+                let said_number = "number_"+said_numbers[i];
+                let said_number_element = document.getElementById(said_number);
+                console.log(said_number_element.classList.item(0));
+                if (said_number_element.classList.item(0)=="div_not_said_number_bingo_table"){
+                    document.getElementById(said_number).classList.remove("div_not_said_number_bingo_table");
+                    document.getElementById(said_number).classList.add("div_said_number_bingo_table");
+                }
+            }
+        }
+
+
+        // Game
+        document.addEventListener("keydown", function (event) {
+            if (event.code === "Space") { play_pause(event); }
+        });
+
+        bingo_board = new_game(NB_NUMEROS);
+        play_pause();
+        bingo_status.onclick = play_pause;
+    </script>
+</body>
+
+</html>
