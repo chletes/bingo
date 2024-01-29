@@ -48,7 +48,7 @@ function TimerIntervalFunction() {
     if (timerRuns <= 0) {
         stopTimer();
         alert("Bingo terminado!")
-        window.location.href = "index_v3.html";
+        window.location.href = "index.html";
     }
     update_bingo_table(bingo_board["said_numbers"]);
 }
