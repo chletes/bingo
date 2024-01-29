@@ -50,6 +50,7 @@ function TimerIntervalFunction() {
         alert("Bingo terminado!")
         window.location.href = "index.html";
     }
+    say_number(bingo_board["said_numbers"][bingo_board["said_numbers"].length-1])
     update_bingo_table(bingo_board["said_numbers"]);
 }
 
@@ -99,6 +100,11 @@ function update_bingo_table(said_numbers) {
             document.getElementById(said_number).classList.add("div_said_number_bingo_table");
         }
     }
+}
+
+function say_number(said_number){
+    var audio = new Audio('static/audio/19.mp3');
+    audio.play();
 }
 
 
