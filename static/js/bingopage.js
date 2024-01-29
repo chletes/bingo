@@ -7,7 +7,7 @@ var bingo_board = null;
 var timer = null;
 var timerRunning = false;
 var bingo_status = document.getElementById("bingo_status");;
-var bingo_speed = 0.5 * 1000;
+var bingo_speed = 3 * 1000;
 var timerRuns = NB_NUMEROS;
 
 
