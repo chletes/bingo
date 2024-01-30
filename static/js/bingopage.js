@@ -7,8 +7,8 @@ var bingo_board = null;
 var timer = null;
 var timerRunning = false;
 var bingo_status = document.getElementById("bingo_status");;
-var bingo_speed = 3 * 1000;
-var timerRuns = NB_NUMEROS;
+var bingo_speed = 3.5 * 1000;
+var timerRuns = NB_NUMEROS +1;
 
 
 // Bingo board functions
@@ -103,7 +103,7 @@ function update_bingo_table(said_numbers) {
 }
 
 function say_number(said_number){
-    var audio = new Audio('static/audio/19.mp3');
+    var audio = new Audio("static/audio/"+said_number+".mp3");
     audio.play();
 }
 
